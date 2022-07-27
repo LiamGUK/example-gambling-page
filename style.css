@@ -1,0 +1,297 @@
+@font-face {
+    font-family: komika;
+    src: local('komika'),
+    url('komika.ttf') 
+    format(truetype);
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('img/main-background_desktop.jpg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: komika;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+    max-width: 85rem;
+    margin: auto;
+    padding-top: 13rem;
+    padding-bottom: 48rem;
+}
+
+.content-row {
+    margin-bottom: 3rem;
+}
+
+.image-wrapper {
+    max-width: 23rem;
+    margin: auto;
+}
+
+.col-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.col-item {
+    max-width: 40rem;
+}
+
+.slot-placeholder {
+    position: relative;
+    -webkit-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotate(18deg);
+    margin: 0 0 3rem 6rem;
+}
+
+.slot-spinner {
+    overflow: hidden;
+    height: 20rem;
+    position: absolute;
+    top: 18.2rem;
+    width: 21rem;
+    z-index: -5;
+    left: 5.5rem;
+}
+
+.slot-spinner--img {
+    background-image: url('img/spin-machine_prizes.jpg');
+    background-position: center;
+    background-size: 100%;
+    height: 340px;
+    -webkit-animation: spin 5s cubic-bezier(.28,-0.22,.54,1.1) infinite;
+    animation: spin 5s cubic-bezier(.28,-0.22,.54,1.1) infinite;
+}
+
+.btn-wrapper {
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 234, 20)), color-stop(rgba(255, 234, 20)), to(rgba(255, 95, 0)));
+    background-image: -o-linear-gradient(top, rgba(255, 234, 20), rgba(255, 234, 20), rgba(255, 95, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 234, 20), rgba(255, 234, 20), rgba(255, 95, 0));
+    width: 38rem;
+    margin: auto;
+    padding: 1rem 5rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn-wrapper:hover {
+    -webkit-transform: translateY(-0.6rem);
+    -ms-transform: translateY(-0.6rem);
+    transform: translateY(-0.6rem);
+    -webkit-box-shadow: 0 1.1rem 1.8rem rgb(0 0 0 / 70%);
+    box-shadow: 0 1.1rem 1.8rem rgb(0 0 0 / 70%);
+}
+
+.btn-wrapper:active {
+    -webkit-transform: translateY(0rem);
+    -ms-transform: translateY(0rem);
+    transform: translateY(0rem);
+    -webkit-box-shadow: 0 0.5rem 0.9rem rgb(0 0 0 / 40%);
+    box-shadow: 0 0.5rem 0.9rem rgb(0 0 0 / 40%);
+}
+
+.btn-large {
+    text-decoration: none;
+    color: #5E310C;
+    font-weight: bold;
+}
+
+.text-wrapper {
+    width: 61rem;
+    margin: auto;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #5E310C;
+    text-shadow: 1px 2px 1px #fff;
+}
+
+.footer-wrapper {
+    background-image: url(img/footer-background.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48rem;
+}
+
+.link-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+.link-group { margin-bottom: 2rem; }
+
+.link-group a:not(:last-child){
+    margin-right: 6rem;
+}
+
+.link-group a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.link-group a:hover {
+    color: #000;
+    text-shadow: 1px 1px 7px #fff;
+}
+
+.logo-group {
+    max-width: 80rem;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.footer-txt {
+    width: 100rem;
+    margin: auto;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 0 4rem;
+}
+
+.highlight,
+.highlight a {
+    color: rgba(255, 234, 20);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        background-position: 0 0;
+    }
+    43% {
+        background-position: 0 0;
+    }
+    82% {
+        background-position: 0 401%;
+    }
+    83% {
+        background-position: 0 399%;
+    }
+    84% {
+        background-position: 0 400%;
+    }
+    100% {
+        background-position: 0 415%;
+    }
+  }
+
+@keyframes spin {
+    0% {
+        background-position: 0 0;
+    }
+    43% {
+        background-position: 0 0;
+    }
+    82% {
+        background-position: 0 401%;
+    }
+    83% {
+        background-position: 0 399%;
+    }
+    84% {
+        background-position: 0 400%;
+    }
+    100% {
+        background-position: 0 415%;
+    }
+  }
+
+@media only screen and (max-width: 66.25em){
+    html { font-size: 55%; }
+}
+
+@media only screen and (max-width: 60.625em){
+    html { font-size: 50%; }
+}
+
+@media only screen and (max-width: 50.3125em){
+    html { font-size: 45%; }
+}
+
+@media only screen and (max-width: 45.125em){
+    html { font-size: 40%; }
+    body {
+        background-image: url('img/main-background_mobile.jpg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .col-main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .link-main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .footer-txt {
+        width: 100%;
+        
+    }
+}
+
+@media only screen and (max-width: 24.375em){
+    html { font-size: 35%; }
+    .text-wrapper { width: 100%; }
+}
